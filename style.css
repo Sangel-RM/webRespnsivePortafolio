@@ -196,7 +196,7 @@ body{
     align-items: center;
 }
 .mainContainer .contentCeo {
-    width: 100%;
+    width: 90%;
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr;
@@ -411,6 +411,9 @@ footer .footer .socialWeb ul li a{
     color: hsl(228, 45%, 44%); 
 }
 @media (min-width:320px) {
+    .mainContainer .section3 .contentCeo .iconPrimerCont{
+        max-width: 400px;
+    }
     .mainContainer .section3 .contentCeo .contentCard{
         width: 100%;
         max-width: 400px;
