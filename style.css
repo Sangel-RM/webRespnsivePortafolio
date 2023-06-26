@@ -195,6 +195,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* corrigiendo el pequeño detalle de el tamañana en width de el container de las card */
 .mainContainer .contentCeo {
     width: 90%;
     display: grid;
