@@ -259,7 +259,7 @@ body{
     font-size: 11px;
 }
 .mainContainer .searchUser{
-    width: 300px;
+    width: 90%;
     height: 300px;
     display: flex;
     background-color: var(--introEmailBackground);
@@ -417,6 +417,9 @@ footer .footer .socialWeb ul li a{
     }
     .mainContainer .section3 .contentCeo .contentCard{
         width: 100%;
+        max-width: 400px;
+    }
+    .mainContainer .searchUser{
         max-width: 400px;
     }
     footer .footer{
