@@ -1,0 +1,488 @@
+:root {
+    /* #primari Colors */
+    --backGroundMain: hsl(218, 28%, 15%);
+    --footerBackground: hsl(216, 53%, 9%);
+    --introEmailBackground: hsl(222, 29%, 18%);
+    --testemonialsBackground: hsl(217, 28%, 15%) ;
+    /* #accent */
+    --callActionBotonInnert: hsl(176, 68%, 64%);
+    --callActionBotonPress: hsl(198, 60%, 50%);
+    --Error: hsl(0, 100%, 63%);
+    /* #neutral */
+    --white: hsl(0, 0%, 100%);
+    /* #font Size */
+    --fs: 14px;
+    /* typoGrafia */
+    --relaway: 'Raleway', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+    /* color de border cool */
+    --border-color: linear-gradient(
+        to right,
+        var(--callActionBotonInnert) 0%,
+        var(--callActionBotonPress) 100%
+    );
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: var(--relaway);
+}
+.mainContainer{
+    background-color: var(--testemonialsBackground);
+    width:100%;
+}
+.headerContainer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--backGroundMain);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.72);
+}
+.headerContainer .logo{
+    width:90px;
+    height: 30px;
+}
+.headerContainer .logo img{
+    width:100%;
+    height:100%;
+}
+.headerContainer .navBar ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.headerContainer .navBar ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--fs);
+}
+/* main */
+.mainContainer .section1{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .section1 .asideCont{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.mainContainer .section1 .asideCont .figureContS1{
+    width: 300px;
+    height: 250px;
+}
+.mainContainer .section1 .asideCont .figureContS1 img{
+    width:100%;
+    height:100%
+}
+.mainContainer .section1 .asideCont .title,
+.mainContainer .section1 .asideCont .subtitle{
+    text-align: center;
+    color: var(--white);
+}
+.mainContainer .section1 .asideCont .subtitle{
+    font-size: var(--fs);
+}
+.mainContainer .section1 .asideCont .start{
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(
+        150deg,
+        var(--callActionBotonInnert),
+        var(--callActionBotonPress)
+    );
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+}
+/* seccion 2 */
+.mainContainer .section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 0 100px 0;
+}
+.mainContainer .section2 .infcontainer{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr;
+}
+.mainContainer .section2 .barneINF{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--border-color);
+    width: 300px;
+}
+.mainContainer .section2 .barneINF .contentCard {
+    padding: 10px;
+    border-radius: 5px;
+    width: 98%;
+    height: 98%;
+    background-color: var(--backGroundMain);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.mainContainer .section2 .barneINF .titleBarnes,
+.mainContainer .section2 .barneINF p{
+    text-align: center;
+    color: var(--white); 
+}
+.mainContainer .section2 .barneINF p{
+    font-size: var(--fs);
+}
+.mainContainer .section2 .stayProductive {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainContainer .section2 .stayProductive .bannerLogo img{
+    width: 100%;
+}
+.mainContainer .section2 .stayProductive .titleStayProuct {
+    color: var(--white);
+    text-align: center;
+}
+.mainContainer .section2 .stayProductive .articleStayProductive{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mainContainer .section2 .stayProductive .articleStayProductive p{
+    color: var(--white);
+    font-size: var(--fs);
+}
+.mainContainer .section2 .stayProductive .articleStayProductive p:last-child a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    color: var(--callActionBotonInnert);
+    border-bottom: 2px solid;
+    padding: 0 0 3px 0;
+    gap: 5px;
+}
+/* section 3 */
+.mainContainer .section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .contentCeo {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.mainContainer .contentCeo .contentCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    border-radius:5px;
+    padding: 20px;
+    background-color: var(--introEmailBackground);
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.37);
+}
+.mainContainer .contentCeo .comillas{
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    bottom: 30px;
+    right: 10px;
+}
+.mainContainer .contentCeo .comillas img{
+    width: 100%;
+    position: absolute;
+}
+.mainContainer .contentCeo .cont-comillas{
+    position: relative;
+    z-index: 2;
+}
+.mainContainer .contentCeo .contentCard .infPersonCeo{
+    display: flex;
+    gap: 10px;
+}
+.mainContainer .contentCeo .contentCard .infPersonCeo figure{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.mainContainer .contentCeo .contentCard .infPersonCeo figure img{
+    width: 100%;
+    height: 100%;
+}
+.mainContainer .contentCeo .contentCard .infPersonCeo .infP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainContainer .contentCeo .contentCard p{
+    color: var(--white);
+    font-size: var(--fs);
+}
+.mainContainer .contentCeo .contentCard .infP .NamePerson{
+    color: var(--white);
+    font-size: var(--white);
+}
+.mainContainer .contentCeo .contentCard .infP p{
+    font-size: 11px;
+}
+.mainContainer .searchUser{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-color: var(--introEmailBackground);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    top: 150px;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.37);
+} 
+.mainContainer .searchUser .content{
+    width: 85%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContainer .searchUser .content .assectUsers{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .searchUser .content .assectUsers h1{
+    color: var(--white);
+    font-size: 18px;
+}
+.mainContainer .searchUser .content .assectUsers p{
+    color: var(--white);
+    font-size: var(--fs);
+}
+.mainContainer .searchUser .content .init{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainContainer .searchUser .content .init input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+}
+.mainContainer .searchUser .content .init #email{
+    padding: 0 20px;
+}
+.mainContainer .searchUser .content .init #email::placeholder{
+    color: var(--Error);
+}
+.mainContainer .searchUser .content .init .Button-start-For-Free{
+    background-image: var(--border-color);
+    cursor: pointer;
+    color: var(--white); 
+    font-weight: bold;
+}
+footer{
+    background-color: var(--footerBackground);
+    padding: 200px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+footer .footer .infContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .footer p{
+    display: flex;
+    gap: 10px;
+    width: 300px;
+}
+footer .footer .contentINFPage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .footer p span{
+    color: var(--white);
+}
+footer .footer p img{
+    width: 20px;
+    height: 20px;
+}
+footer .footer .phoneAndEmail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .footer .navFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer .footer .navFooter ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+}
+footer .footer .navFooter ul li a{
+    text-decoration: none;
+    color:var(--white);
+    font-size: 16px;
+}
+footer .footer .socialWeb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer .socialWeb ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+footer .footer .socialWeb ul li a{
+    color: var(--white);
+    font-size: 25px;
+}
+.Mentor,
+.MasterCreator{
+    color: var(--white);
+    font-size: var(--fs);
+}
+.Mentor a,
+.MasterCreator a{
+    text-decoration: none;
+    color: var(--callActionBotonInnert);
+}
+.MasterCreator{
+    padding: 0 0 10px 0;
+}
+.attribution {
+    font-size: 11px; 
+    margin: 10px 0;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width:320px) {
+    .mainContainer .section3 .contentCeo .contentCard{
+        width: 100%;
+        max-width: 400px;
+    }
+    footer .footer{
+        max-width: 300px;
+    }
+}
+@media (min-width: 700px) {
+    .headerContainer .logo {
+        width: 120px;
+    }
+    .headerContainer .navBar ul{
+        gap: 25px;
+    }
+    .headerContainer .navBar ul li a{
+        font-size: 16px;
+    }
+    .mainContainer .section1 .asideCont{
+        width: 650px;
+    }
+    .mainContainer .section2 .infcontainer{
+        grid-template-columns: 1fr auto;
+    }
+    .mainContainer .section2 .stayProductive{
+        max-width: 650px;
+        flex-direction: row;
+    }
+    .mainContainer .section2{
+        gap: 60px;
+    }
+    footer .footer {
+        max-width: 600px;
+    }
+}
+@media(min-width: 1024px){
+    .mainContainer .section3 .contentCeo .contentCard{
+        max-width: 300px;
+    }
+    .mainContainer .section3 .contentCeo{
+        width: 90%;
+        max-width: 900px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .mainContainer .searchUser{
+        width: 100%;
+        max-width: 700px;
+    }
+    .mainContainer .searchUser .content .init{
+        flex-direction: row;
+    }
+    .mainContainer .searchUser .content .init #email{
+        max-width: 70%;
+    }
+    .mainContainer .searchUser .content .init .Button-start-For-Free{
+        max-width: 30%;
+    }
+    footer .footer {
+        max-width: 90%;
+    }
+    footer .footer .contentINFPage {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .footer .infContact {
+        flex-direction: row;
+        gap: 100px;
+    }
+    footer .footer .navFooter {
+        flex-direction: row;
+    }
+    footer .footer .socialWeb{
+        align-items: baseline;
+    }
+}
